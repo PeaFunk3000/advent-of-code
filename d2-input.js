@@ -12,10 +12,7 @@ games.forEach(pair => {
     splitData.push(round)
 })
 
-
 console.log(splitData)
-
-
 
 var wins = 0;
 var draws = 0;
@@ -47,7 +44,7 @@ for (let index = 0; index < splitData.length; index++) {
             papers++;
         }
     }
-    if (elfChoice == 'B') {
+    else if (elfChoice == 'B') {
         if (myChoice == 'X') {
             losses++;
             rocks++;
@@ -59,7 +56,7 @@ for (let index = 0; index < splitData.length; index++) {
             scissors++;
         }
     }
-    if (elfChoice == 'C') {
+    else if (elfChoice == 'C') {
         if (myChoice == 'X') {
             losses++;
             papers++;
@@ -72,8 +69,6 @@ for (let index = 0; index < splitData.length; index++) {
         }
     }
 }
-
-
 
 // for (let index = 0; index < splitData.length; index++) {
 //     var elfChoice = splitData[index][0];
@@ -133,4 +128,21 @@ console.log("My Usepoints :" + usePoints)
 var totalPoints = (usePoints + gamePoints)
 console.log("My Totalpoints :" + totalPoints)
 
-
+// Danny used Hashmap (Lookup-table)
+// var = outcomeTable = {
+//     A:{
+//         X: loss+scissorVal,
+//         Y:    ,
+//         Z:    
+//     },
+//     B:{
+//         X:    ,
+//         Y:    ,
+//         Z:   
+//     },
+//     C:{
+//         X:    ,
+//         Y:    ,
+//         Z:   
+//     },
+// }
