@@ -1,6 +1,6 @@
 var fs = require('fs');
 
-var input = fs.readFileSync('./input.txt')
+var input = fs.readFileSync('./d1-input.txt')
 
 var data = input.toString ()
 
